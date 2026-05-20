@@ -1,0 +1,5199 @@
+# WILLOWBROOK CHRYSLER - USED VEHICLE INVENTORY KNOWLEDGE BASE
+## Optimized Format for AI Consumption | Generated: 2026-03-06
+
+### INVENTORY SNAPSHOT
+- **Total Units**: 207 active listings
+- **Pricing Model**: Call for pricing (all units)
+- **Location**: Langley, Surrey BC
+- **Data Quality**: 99.5% complete (1 unit excluded for missing data)
+
+### INVENTORY COMPOSITION
+Top Manufacturers by Volume:
+1. Jeep: 42 units (Avg 49k km, 2020-2026)
+2. RAM: 41 units (Avg 53k km, 2018-2024)  
+3. Dodge: 27 units (Avg 40k km, 2007-2025)
+4. Hyundai: 18 units (Avg 56k km, 2016-2025)
+5. Ford: 15 units (Avg 51k km, 2017-2024)
+[21 other makes represented]
+
+### VEHICLE CLASSIFICATION SYSTEM
+**By Mileage (KM):**
+- Low: <20,000 km (Near new)
+- Medium: 20,000-60,000 km (Average use)
+- High: 60,000-100,000 km (Above average)
+- Very High: >100,000 km (High mileage)
+
+**By Age:**
+- 2025-2026: Current model year
+- 2020-2024: Recent (1-4 years)
+- 2015-2019: Mid-age (5-9 years)
+- 2000-2014: Older (10+ years)
+
+### DATA STRUCTURE
+Each vehicle record follows this schema:
+```
+{
+  "id": "STOCK_NUMBER",
+  "vin": "VIN_CODE", 
+  "vehicle": {
+    "year": YYYY,
+    "make": "MANUFACTURER",
+    "model": "MODEL_NAME",
+    "trim": "TRIM_LEVEL",
+    "age_years": N
+  },
+  "specs": {
+    "mileage_km": NNNNN,
+    "mileage_category": "Low|Medium|High|Very High",
+    "transmission": "Auto|Manual|Not specified",
+    "exterior_color": "COLOR|Not specified",
+    "interior_color": "COLOR|Not specified"
+  },
+  "availability": {
+    "status": "Available",
+    "tags": ["New arrivals"|empty],
+    "image_available": true|false
+  },
+  "pricing": "Call for pricing"
+}
+```
+
+### SEARCH GUIDELINES FOR AI
+- **Exact Match**: Use Stock # (e.g., "25UP578A") or VIN
+- **Make/Model**: Check `vehicle.make` and `vehicle.model`
+- **Budget Conscious**: Filter by `specs.mileage_category` = "High" or "Very High" for better deals
+- **Latest Arrivals**: Filter by `availability.tags` containing "New arrivals"
+- **Low Mileage**: `specs.mileage_category` = "Low" + recent years
+- **Color Matching**: Check `specs.exterior_color` (note: many units not specified)
+- **Transmission**: 99% Automatic based on available data
+
+### COMPLETE INVENTORY LIST (JSON FORMAT)
+```json
+[
+[
+  {
+    "id": "23J338B",
+    "vin": "WMWXU7C01L2L52632",
+    "vehicle": {
+      "year": 2020,
+      "make": "MINI",
+      "model": "5 door",
+      "trim": "Cooper",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 34422,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP578A",
+    "vin": "1C4PJLAB7MD227049",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Sport",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 83622,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP727",
+    "vin": "5N1AT2MV5KC742405",
+    "vehicle": {
+      "year": 2019,
+      "make": "Nissan",
+      "model": "Rogue",
+      "trim": "Awd Sv",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 46200,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP734A",
+    "vin": "3CZRU6H3XLM107453",
+    "vehicle": {
+      "year": 2020,
+      "make": "Honda",
+      "model": "HR-V",
+      "trim": "Lx Awd Cvt",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 67428,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R192A",
+    "vin": "KNDEUCAA4N7301968",
+    "vehicle": {
+      "year": 2022,
+      "make": "Kia",
+      "model": "Seltos",
+      "trim": "Ex",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 102563,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R85A",
+    "vin": "2T1BURHE5KC225931",
+    "vehicle": {
+      "year": 2019,
+      "make": "Toyota",
+      "model": "Corolla",
+      "trim": "Ce",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 125759,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP742A",
+    "vin": "5N1AT3AB9PC746139",
+    "vehicle": {
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Rogue",
+      "trim": "S Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 58357,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J279A",
+    "vin": "KMHLN4AG8NU358539",
+    "vehicle": {
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "trim": "Ultimate Tech",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 46149,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP569A",
+    "vin": "NMTKHMBX1KR070897",
+    "vehicle": {
+      "year": 2019,
+      "make": "Toyota",
+      "model": "C-HR",
+      "trim": "Fwd",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 89718,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J287C",
+    "vin": "5NMS3DAJ0NH431377",
+    "vehicle": {
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Santa Fe",
+      "trim": "Preferred Awd Trend",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 46523,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP356",
+    "vin": "3N1CN8FV8PL829141",
+    "vehicle": {
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Versa",
+      "trim": "Sr",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 15413,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "22UP330",
+    "vin": "1C6RR7LM0JS286322",
+    "vehicle": {
+      "year": 2018,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Outdoorsman",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 98148,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP669",
+    "vin": "1C4AJWAG6HL703581",
+    "vehicle": {
+      "year": 2017,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 9
+    },
+    "specs": {
+      "mileage_km": 71052,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Man",
+      "exterior_color": "Purple",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP14A",
+    "vin": "3FMCR9B68NRD47166",
+    "vehicle": {
+      "year": 2022,
+      "make": "Ford",
+      "model": "Bronco Sport",
+      "trim": NaN,
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 66900,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP44A",
+    "vin": "KNDERCAA9P7407921",
+    "vehicle": {
+      "year": 2023,
+      "make": "Kia",
+      "model": "Seltos",
+      "trim": "Ex Premium",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 59526,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP642A",
+    "vin": "3C4NJDBB6MT517594",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": NaN,
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 80200,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J331A",
+    "vin": "1C4PJMBX7JD504777",
+    "vehicle": {
+      "year": 2018,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": NaN,
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 90504,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J414A",
+    "vin": "3MW5R7J05L8B38370",
+    "vehicle": {
+      "year": 2020,
+      "make": "BMW",
+      "model": "3 Series",
+      "trim": "330I Xdrive Sedan",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 80348,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "21D36A",
+    "vin": "2B3LA73WX7H636757",
+    "vehicle": {
+      "year": 2007,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Srt8",
+      "age_years": 19
+    },
+    "specs": {
+      "mileage_km": 50177,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Yellow",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP202",
+    "vin": "KMHLM4DG4RU845290",
+    "vehicle": {
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "trim": "Low Mileage",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 8375,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP380",
+    "vin": "KMHRC8A3XSU399318",
+    "vehicle": {
+      "year": 2025,
+      "make": "Hyundai",
+      "model": "Venue",
+      "trim": "Preferred Ivt",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 51,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J501B",
+    "vin": "5NMZUDLB7JH090894",
+    "vehicle": {
+      "year": 2018,
+      "make": "Hyundai",
+      "model": "Santa Fe Sport",
+      "trim": "Luxury Awd",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 106125,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP33",
+    "vin": "1C4GJXAN0NW141962",
+    "vehicle": {
+      "year": 2022,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 61330,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Pink",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP57",
+    "vin": "1C6RR7FG7MS584053",
+    "vehicle": {
+      "year": 2021,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": NaN,
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 64016,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R146AA",
+    "vin": "5YJ3E1EB0MF069292",
+    "vehicle": {
+      "year": 2021,
+      "make": "Tesla",
+      "model": "Model 3",
+      "trim": "Long Range",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 60811,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "22UP249",
+    "vin": "1C4RDJDG7MC573779",
+    "vehicle": {
+      "year": 2021,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Gt",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 118658,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP671",
+    "vin": "KM8JBCDE2RU329645",
+    "vehicle": {
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 61652,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP682",
+    "vin": "KM8K6CABXPU039945",
+    "vehicle": {
+      "year": 2023,
+      "make": "Hyundai",
+      "model": "Kona",
+      "trim": "2.0L Preferred Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 38451,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24M57A",
+    "vin": "2C4RC3BG8NR107742",
+    "vehicle": {
+      "year": 2022,
+      "make": "Chrysler",
+      "model": "Pacifica",
+      "trim": "Touring L Awd",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 146460,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP444",
+    "vin": "2C3CDXJG8NH162651",
+    "vehicle": {
+      "year": 2022,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Sxt",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 76451,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP635A",
+    "vin": "3C4NJDDB7NT194395",
+    "vehicle": {
+      "year": 2022,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 61866,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP720",
+    "vin": "KL79MRSL1PB158883",
+    "vehicle": {
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "TrailBlazer",
+      "trim": "Lt Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 16003,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J257A",
+    "vin": "2FMPK4J92PBA28366",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "Edge",
+      "trim": "Sel",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 69414,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP761",
+    "vin": "JN8BT3BB6SW152143",
+    "vehicle": {
+      "year": 2025,
+      "make": "Nissan",
+      "model": "Rogue",
+      "trim": "Sv Moonroof",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 37819,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP443A",
+    "vin": "3FMCR9C65PRD30732",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "Bronco Sport",
+      "trim": NaN,
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 47945,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP593",
+    "vin": "2FMPK4K91RBA99012",
+    "vehicle": {
+      "year": 2024,
+      "make": "Ford",
+      "model": "Edge",
+      "trim": "Titanium",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 69633,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP667",
+    "vin": "2C3CCAGGXPH561300",
+    "vehicle": {
+      "year": 2023,
+      "make": "Chrysler",
+      "model": "300",
+      "trim": "S Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 51094,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP767",
+    "vin": "2C3CDXJGXPH537457",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Sxt Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 10670,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP353A",
+    "vin": "KM8HACAB0RU179126",
+    "vehicle": {
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Kona",
+      "trim": "Essential Awd",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 32298,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP130A",
+    "vin": "JA4JZ3AX8LZ610665",
+    "vehicle": {
+      "year": 2020,
+      "make": "Mitsubishi",
+      "model": "Outlander",
+      "trim": "Sel",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 73762,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26D1A",
+    "vin": "3C4NJDBN8RT161957",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 13845,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP666A",
+    "vin": "3C4NJDDN1RT588412",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 31826,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP252",
+    "vin": "KM8HBCAB4RU152007",
+    "vehicle": {
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Kona",
+      "trim": "Low Mileage",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 15620,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R194A",
+    "vin": "5YJ3E1EA0PF490442",
+    "vehicle": {
+      "year": 2023,
+      "make": "Tesla",
+      "model": "Model 3",
+      "trim": "Base",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 68754,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP599A",
+    "vin": "3C4NJDDN4PT567745",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 60324,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP392A",
+    "vin": "5XYRKDLF1MG023828",
+    "vehicle": {
+      "year": 2021,
+      "make": "Kia",
+      "model": "Sorento",
+      "trim": "Sx Black Leather",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 91379,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24C4A",
+    "vin": "ZACNDFBN8P3A05190",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Hornet",
+      "trim": "Gt Plus",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 8022,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Hot Tamale",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP74A",
+    "vin": "1C4PJMDN7MD145382",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Low Mileage",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 52536,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP550",
+    "vin": "5N1AZ2BS7RC108997",
+    "vehicle": {
+      "year": 2024,
+      "make": "Nissan",
+      "model": "Murano",
+      "trim": "Sv",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 62371,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP229A",
+    "vin": "1C6RR7KT8LS117063",
+    "vehicle": {
+      "year": 2020,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Low Mileage",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 66100,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J132A",
+    "vin": "ZACNDFBNXP3A07667",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Hornet",
+      "trim": "Gt Plus",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 10311,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Ball",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP397A",
+    "vin": "1FAGP8UH2R5131333",
+    "vehicle": {
+      "year": 2024,
+      "make": "Ford",
+      "model": "Mustang",
+      "trim": "Ecoboost",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 25452,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP55",
+    "vin": "2C3CDZAG5LH148263",
+    "vehicle": {
+      "year": 2020,
+      "make": "Dodge",
+      "model": "Challenger",
+      "trim": "Sxt",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 69554,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J279B",
+    "vin": "1FATP8UHXM5123794",
+    "vehicle": {
+      "year": 2021,
+      "make": "Ford",
+      "model": "Mustang",
+      "trim": "Ecoboost",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 46125,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Man",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J282A",
+    "vin": "1C4RJFAG9MC824585",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Altitude",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 74674,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP633",
+    "vin": "1C6RRFCG5NN311403",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Tradesman",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 36829,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP484",
+    "vin": "3C4NJDFN6RT594347",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Altitude",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 7677,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J513B",
+    "vin": "2C3CDXHG2PH536096",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Gt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 28613,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Sublime Met Clear Coat",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP705",
+    "vin": "2C3CDXHG8PH536104",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Gt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 32027,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J305A",
+    "vin": "KNDETCA79R7555155",
+    "vehicle": {
+      "year": 2024,
+      "make": "Kia",
+      "model": "Seltos",
+      "trim": "Sx Turbo Black",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 22005,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP512A",
+    "vin": "1C6RR7LT7NS232075",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": NaN,
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 93541,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24R333A",
+    "vin": "1C4RDJAG7PC603517",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Sxt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 90510,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R156A",
+    "vin": "3C6RR7KG7NG405914",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Express",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 69589,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J215A",
+    "vin": "3C4NJDBN2ST618705",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 963,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP490",
+    "vin": "5NTJCDDF5RH102459",
+    "vehicle": {
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Santa Cruz",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 74,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP493",
+    "vin": "1GTW7AFP2P1259707",
+    "vehicle": {
+      "year": 2023,
+      "make": "GMC",
+      "model": "Savana Cargo",
+      "trim": "2500 135",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 28181,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J56A",
+    "vin": "3C4NJDDN4TT153231",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 1147,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "21J599A",
+    "vin": "5UXKU2C52J0X48488",
+    "vehicle": {
+      "year": 2018,
+      "make": "BMW",
+      "model": "X6",
+      "trim": "Xdrive35I",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 76666,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "23R588A",
+    "vin": "KNDC4DLC0N5025943",
+    "vehicle": {
+      "year": 2022,
+      "make": "Kia",
+      "model": "EV6",
+      "trim": "Low Mileage",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 38900,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP628",
+    "vin": "WA16AAFY7P2056455",
+    "vehicle": {
+      "year": 2023,
+      "make": "Audi",
+      "model": "Q5",
+      "trim": "Technik 45 Tfsi",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 84241,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP678",
+    "vin": "1C6SRFNT3RN208420",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Tradesman",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 4509,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP731",
+    "vin": "1FAGP8UH0R5104065",
+    "vehicle": {
+      "year": 2024,
+      "make": "Ford",
+      "model": "Mustang",
+      "trim": "Ecoboost",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 22246,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J267A",
+    "vin": "1C4HJXEG2PW542626",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sahara",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 18341,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Yellow",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R34A",
+    "vin": "1N6ED1FK9PN642333",
+    "vehicle": {
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Frontier",
+      "trim": "Sv",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 71473,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP399B",
+    "vin": "1C4GJXAN6PW687250",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys Sport",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 27764,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25D22A",
+    "vin": "1C4RDJDG9PC550038",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Gt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 53977,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP626",
+    "vin": "1C6RR7GT0NS237337",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Low Mileage",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 28032,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R114A",
+    "vin": "1C6HJTAGXPL554420",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": "Willys",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 65563,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Man",
+      "exterior_color": "Green",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R91A",
+    "vin": "1C6SRFHT3NN373924",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 87580,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "23J347A",
+    "vin": "1C4RJFBG7MC651454",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Limited X",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 87852,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J75A",
+    "vin": "1C4RDJAG8PC613019",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Sxt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 27905,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J227B",
+    "vin": "1C4PJXAN6RW107319",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 44970,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP333",
+    "vin": "1C6SRFFT3PN659164",
+    "vehicle": {
+      "year": 2023,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Big Horn",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 19523,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP394B",
+    "vin": "1C4RJHAG4PC652062",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Altitude",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 34717,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R68A",
+    "vin": "1C4JJXR64NW150117",
+    "vehicle": {
+      "year": 2022,
+      "make": "Jeep",
+      "model": "Wrangler 4xe",
+      "trim": "Rubicon",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 61104,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP401",
+    "vin": "1C4RJHBG9PC539495",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Limited",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 58256,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP48",
+    "vin": "1C6JJTAM6PL593075",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 27699,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R4A",
+    "vin": "1C6SRFHM7MN824697",
+    "vehicle": {
+      "year": 2021,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 91704,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "23C55",
+    "vin": "2C3CDXHG5PH508020",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Gt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 50,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Triple Nickel",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP618",
+    "vin": "1C4PJXDN7RW222216",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 30515,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R93A",
+    "vin": "1C6SRFHT7NN425569",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 75948,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25D20A",
+    "vin": "1C4RDJDG2SC514264",
+    "vehicle": {
+      "year": 2025,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Gt",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 3012,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J79A",
+    "vin": "1C6SRFJT5RN216945",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Laramie",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 32312,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP54A",
+    "vin": "1C4RJXFG8RW119703",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Rubicon",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 35125,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Man",
+      "exterior_color": "Yellow",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "23UP411D",
+    "vin": "2C3CDZBT7PH503502",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Challenger",
+      "trim": "R/T",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 11050,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Man",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP659",
+    "vin": "2C3CDZBT4PH693825",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Challenger",
+      "trim": "R/T",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 4099,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP631",
+    "vin": "1FTEW1EP1PKF51374",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "F-150",
+      "trim": "Lariat",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 16591,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24R60A",
+    "vin": "3C63R3HJ9MG690714",
+    "vehicle": {
+      "year": 2021,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 95526,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP59",
+    "vin": "1C6SRFJT8RN231150",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Laramie",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 27576,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP149A",
+    "vin": "2C3CDXL94FH769999",
+    "vehicle": {
+      "year": 2015,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Srt Hellcat",
+      "age_years": 11
+    },
+    "specs": {
+      "mileage_km": 67050,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R170A",
+    "vin": "1C4SDJCT7RC102657",
+    "vehicle": {
+      "year": 2024,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 34000,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24R493A",
+    "vin": "3C63R3BL4NG238536",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Low Mileage",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 11090,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP589",
+    "vin": "2C3CDXGJ9PH525500",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Scat Pack 392",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 17025,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP192A",
+    "vin": "1C4SDJGJ8NC203953",
+    "vehicle": {
+      "year": 2022,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Srt 392",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 47679,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R78A",
+    "vin": "1C6SRFHT9MN513795",
+    "vehicle": {
+      "year": 2021,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 64708,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP173",
+    "vin": "4JGDF7FEXJB152946",
+    "vehicle": {
+      "year": 2018,
+      "make": "Mercedes-Benz",
+      "model": "GLS-Class",
+      "trim": "Amg 63 4Matic",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 86149,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP455",
+    "vin": "2C3CDXGJ5PH571440",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Scat Pack 392",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 2310,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24R255AA",
+    "vin": "WDDZF8KB4JA385390",
+    "vehicle": {
+      "year": 2018,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "trim": "Amg E 63 4Matic",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 72108,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP681",
+    "vin": "3C63R3SL7RG148903",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 58378,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP766",
+    "vin": "3C63RRRL3PG534532",
+    "vehicle": {
+      "year": 2023,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 11905,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP16",
+    "vin": "2C3CDXL96NH138590",
+    "vehicle": {
+      "year": 2022,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": "Srt Hellcat Widebody",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 50509,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP298",
+    "vin": "3C63R3EL1RG384667",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 23761,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP688",
+    "vin": "3C63RRJL3RG384677",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 100,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP31",
+    "vin": "2C3CDZC91NH230170",
+    "vehicle": {
+      "year": 2022,
+      "make": "Dodge",
+      "model": "Challenger",
+      "trim": "Srt Hellcat",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 21832,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J168B",
+    "vin": "2C3CDZL94NH143590",
+    "vehicle": {
+      "year": 2022,
+      "make": "Dodge",
+      "model": "Challenger",
+      "trim": "Srt Hellcat",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 22258,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP45",
+    "vin": "3C63RRML8RG290094",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 809,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J196A",
+    "vin": "1C6JJTBGXML621514",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": "Low Mileage",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 59606,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "22UP415A",
+    "vin": "KMHTC6AD9GU297275",
+    "vehicle": {
+      "year": 2016,
+      "make": "Hyundai",
+      "model": "Veloster",
+      "trim": "Se",
+      "age_years": 10
+    },
+    "specs": {
+      "mileage_km": 114607,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J152A",
+    "vin": "3C4NJDDB6KT772014",
+    "vehicle": {
+      "year": 2019,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 67589,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24D13A",
+    "vin": "3C4NJDFN5RT594209",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Altitude",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 23669,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24R161A",
+    "vin": "1C6RRFCG0RN164753",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Tradesman",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 4509,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24R356B",
+    "vin": "JA4AJVAW3RU600979",
+    "vehicle": {
+      "year": 2024,
+      "make": "Mitsubishi",
+      "model": "RVR",
+      "trim": "Sel Awc",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 20553,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J57A",
+    "vin": "1C6RR7LT5LS144204",
+    "vehicle": {
+      "year": 2020,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": NaN,
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 80836,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP171",
+    "vin": "3FTTW8E37PRA89508",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "Maverick",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 23579,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP90B",
+    "vin": "1G1FE1R75P0123880",
+    "vehicle": {
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Camaro",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 7703,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Man",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP264",
+    "vin": "2FMPK4K91PBA38014",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "Edge",
+      "trim": "Titanium",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 81222,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP15",
+    "vin": "KMHLN4DGXSU913840",
+    "vehicle": {
+      "year": 2025,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "trim": "Luxury Ivt Two-Tone",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 30,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP423A",
+    "vin": "1HGCV1F96NA800055",
+    "vehicle": {
+      "year": 2022,
+      "make": "Honda",
+      "model": "Accord Sedan",
+      "trim": "Touring",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 84509,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP354A",
+    "vin": "KMHRC8A35NU168170",
+    "vehicle": {
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Venue",
+      "trim": "Trend",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 80123,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP417",
+    "vin": "KNDEUCAA5S7685531",
+    "vehicle": {
+      "year": 2025,
+      "make": "Kia",
+      "model": "Seltos",
+      "trim": "Ex Awd",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 16730,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J164A",
+    "vin": "KMHRC8A30NU176337",
+    "vehicle": {
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Venue",
+      "trim": "Ultimate",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 44208,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP376B",
+    "vin": "2C3CDZJG6PH596503",
+    "vehicle": {
+      "year": 2023,
+      "make": "Dodge",
+      "model": "Challenger",
+      "trim": "Gt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 32552,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Triple Nickel",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP471",
+    "vin": "JN1BJ1BWXPW108925",
+    "vehicle": {
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Qashqai",
+      "trim": "Sv Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 40080,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24D65B",
+    "vin": "1FMCU9G68NUA74830",
+    "vehicle": {
+      "year": 2022,
+      "make": "Ford",
+      "model": "Escape",
+      "trim": "Se Awd",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 41256,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP494",
+    "vin": "3N1CP5CV4PL564814",
+    "vehicle": {
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Kicks",
+      "trim": "Sv",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 26163,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP518",
+    "vin": "1FTFW1E50PKF18238",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "F-150",
+      "trim": "Xlt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 19172,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP537",
+    "vin": "KL79MRSL5PB166839",
+    "vehicle": {
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "TrailBlazer",
+      "trim": "Lt Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 73514,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP545",
+    "vin": "1G1ZD5ST7NF143847",
+    "vehicle": {
+      "year": 2022,
+      "make": "Chevrolet",
+      "model": "Malibu",
+      "trim": "Lt",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 86626,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP566",
+    "vin": "3N1CP5CV9SL487298",
+    "vehicle": {
+      "year": 2025,
+      "make": "Nissan",
+      "model": "Kicks Play",
+      "trim": "Sv",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 6001,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J231A",
+    "vin": "JTDBDMHE7P3002356",
+    "vehicle": {
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Corolla",
+      "trim": "Hybrid Xse",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 45125,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP627",
+    "vin": "1C6RR7LT1NS163951",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Low Mileage",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 35905,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP651",
+    "vin": "KL79MMS25RB132185",
+    "vehicle": {
+      "year": 2024,
+      "make": "Chevrolet",
+      "model": "TrailBlazer",
+      "trim": "Ls",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 2759,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP612A",
+    "vin": "JM1DKFD76M1504574",
+    "vehicle": {
+      "year": 2021,
+      "make": "Mazda",
+      "model": "CX-3",
+      "trim": "Gt",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 78000,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J483BB",
+    "vin": "1N4AA6AP4HC436303",
+    "vehicle": {
+      "year": 2017,
+      "make": "Nissan",
+      "model": "Maxima",
+      "trim": "Sv",
+      "age_years": 9
+    },
+    "specs": {
+      "mileage_km": 30536,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R185A",
+    "vin": "1GCGTDEN5K1196063",
+    "vehicle": {
+      "year": 2019,
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "Z71",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 69881,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Orange",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J244A",
+    "vin": "1FTVW1EL2PWG03696",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "F-150 Lightning",
+      "trim": NaN,
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 47924,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J216A",
+    "vin": "3C6RR7KT2PG657232",
+    "vehicle": {
+      "year": 2023,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 13930,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J262A",
+    "vin": "KNDPU3AF5P7082154",
+    "vehicle": {
+      "year": 2023,
+      "make": "Kia",
+      "model": "Sportage",
+      "trim": "Lx",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 31518,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP492",
+    "vin": "1GTW7AFP5P1152652",
+    "vehicle": {
+      "year": 2023,
+      "make": "GMC",
+      "model": "Savana Cargo",
+      "trim": "2500 135",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 24892,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26M2A",
+    "vin": "1GKKNXLSXMZ155712",
+    "vehicle": {
+      "year": 2021,
+      "make": "GMC",
+      "model": "Acadia",
+      "trim": "Denali",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 63109,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R19B",
+    "vin": "1G1ZD5ST8PF167786",
+    "vehicle": {
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Malibu",
+      "trim": "Lt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 48959,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R193A",
+    "vin": "3C6RR7KG5PG663576",
+    "vehicle": {
+      "year": 2023,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 33808,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP463B",
+    "vin": "WBAWL73568PX58569",
+    "vehicle": {
+      "year": 2008,
+      "make": "BMW",
+      "model": "3 Series",
+      "trim": "Low Mileage",
+      "age_years": 18
+    },
+    "specs": {
+      "mileage_km": 19807,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP472",
+    "vin": "JN1BJ1AW5PW110762",
+    "vehicle": {
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Qashqai",
+      "trim": "S Awd",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 45833,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP540",
+    "vin": "1FTFW1E86PKE15125",
+    "vehicle": {
+      "year": 2023,
+      "make": "Ford",
+      "model": "F-150",
+      "trim": "Xlt",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 69918,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP208",
+    "vin": "3C6MRVHG9RE130375",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "3500 High Roof 159",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 2728,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25D38A",
+    "vin": "1C6RR7LT8PS555277",
+    "vehicle": {
+      "year": 2023,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": "Warlock",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 39691,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP29",
+    "vin": "1C4RDJDG8NC215107",
+    "vehicle": {
+      "year": 2022,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Gt",
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 32606,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J214A",
+    "vin": "3C4NJDBN2RT172128",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 8799,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J85A",
+    "vin": "WDCTG4GB3KU018800",
+    "vehicle": {
+      "year": 2019,
+      "make": "Mercedes-Benz",
+      "model": "GLA",
+      "trim": "250 4Matic Suv",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 89985,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP38",
+    "vin": "3C6TRVAG1KE528787",
+    "vehicle": {
+      "year": 2019,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "1500 Low Roof 136",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 36725,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J254A",
+    "vin": "1C4RJFAG6LC405639",
+    "vehicle": {
+      "year": 2020,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Altitude",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 115302,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP719A",
+    "vin": "KM8J3CA40LU226188",
+    "vehicle": {
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "trim": "Preferred",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 95200,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP56",
+    "vin": "3C4NJDAN5ST539854",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 63930,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP51",
+    "vin": "3VWE57BU7MM062558",
+    "vehicle": {
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "trim": "Highline",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 76109,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25R2A",
+    "vin": "3C63R3CL2RG167874",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 74489,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J490A",
+    "vin": "1C4RJHAG1RC141301",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Altitude",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 19379,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP69",
+    "vin": "2T3BWRFV4SW283550",
+    "vehicle": {
+      "year": 2025,
+      "make": "Toyota",
+      "model": "RAV4",
+      "trim": "Hybrid Le",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 4275,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J241A",
+    "vin": "1C4PJMMX9MD149211",
+    "vehicle": {
+      "year": 2021,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Altitude",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 85909,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R80B",
+    "vin": "3C63R3EL7LG157233",
+    "vehicle": {
+      "year": 2020,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 32109,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP76",
+    "vin": "2C4RC1BG7PR567630",
+    "vehicle": {
+      "year": 2023,
+      "make": "Chrysler",
+      "model": "Pacifica",
+      "trim": "Touring L",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 72158,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J247A",
+    "vin": "3C4NJDDB2JT148306",
+    "vehicle": {
+      "year": 2018,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 131116,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP74",
+    "vin": "3C4RJNAK2RT177280",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Wagoneer S",
+      "trim": "Low Mileage",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 745,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black "
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J115A",
+    "vin": "5NMS3DAJ2MH357877",
+    "vehicle": {
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "Santa Fe",
+      "trim": NaN,
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 76052,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP73",
+    "vin": "3C6UR5EL3RG322199",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "2500",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 51018,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J291A",
+    "vin": "3C4NJDANXST543172",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 18250,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP93",
+    "vin": "1C6SRFHT2RN102343",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 76003,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP89",
+    "vin": "1C6RJTEG6SL518117",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": "Low Mileage",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 8275,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Dark blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R85A",
+    "vin": "1GTP6DEKXP1150068",
+    "vehicle": {
+      "year": 2023,
+      "make": "GMC",
+      "model": "Canyon",
+      "trim": "Low Mileage",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 19750,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Brown",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP78",
+    "vin": "3KPF34AD8RE781834",
+    "vehicle": {
+      "year": 2024,
+      "make": "Kia",
+      "model": "Forte",
+      "trim": "Ex",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 43066,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP68B",
+    "vin": "5XXGU4L38LG400651",
+    "vehicle": {
+      "year": 2020,
+      "make": "Kia",
+      "model": "Optima",
+      "trim": "Ex",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 81850,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R137A",
+    "vin": "3C63R3EL6KG600518",
+    "vehicle": {
+      "year": 2019,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 168980,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26D14A",
+    "vin": "3C6RR7KT5NG310426",
+    "vehicle": {
+      "year": 2022,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": NaN,
+      "age_years": 4
+    },
+    "specs": {
+      "mileage_km": 75211,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R116A",
+    "vin": "5J8YD4H00KL801341",
+    "vehicle": {
+      "year": 2019,
+      "make": "Acura",
+      "model": "MDX",
+      "trim": "Elite 6 Passenger Sh",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 94640,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26D11A",
+    "vin": "1C4RJHDG3PC527095",
+    "vehicle": {
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Overland",
+      "age_years": 3
+    },
+    "specs": {
+      "mileage_km": 26199,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R133C",
+    "vin": "3C4NJDBN3ST539530",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 5850,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "C",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP91",
+    "vin": "3VVSX7B26RM085045",
+    "vehicle": {
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Taos",
+      "trim": "Comfortline",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 65190,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP92",
+    "vin": "4T1G11AK8RU903905",
+    "vehicle": {
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Camry",
+      "trim": "Se",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 54865,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP90",
+    "vin": "3VVSX7B22RM013579",
+    "vehicle": {
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Taos",
+      "trim": "Comfortline",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 78006,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J69A",
+    "vin": "JA4JZ3AX8HZ604680",
+    "vehicle": {
+      "year": 2017,
+      "make": "Mitsubishi",
+      "model": "Outlander",
+      "trim": "Se",
+      "age_years": 9
+    },
+    "specs": {
+      "mileage_km": 81289,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP621",
+    "vin": "1C6SRFLMXMN608012",
+    "vehicle": {
+      "year": 2021,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 95377,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R73A",
+    "vin": "1C6SRFPT6KN871158",
+    "vehicle": {
+      "year": 2019,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 121340,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "22UP239AA",
+    "vin": "1N4AZ0CP4GC302344",
+    "vehicle": {
+      "year": 2016,
+      "make": "Nissan",
+      "model": "LEAF",
+      "trim": "S",
+      "age_years": 10
+    },
+    "specs": {
+      "mileage_km": 47859,
+      "mileage_category": "Medium (20k-60k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J258A",
+    "vin": "KM8J3CA41LU140789",
+    "vehicle": {
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "trim": "Preferred",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 110942,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP344A",
+    "vin": "KNAFZ6A3XG5457629",
+    "vehicle": {
+      "year": 2016,
+      "make": "Kia",
+      "model": "Forte Koup",
+      "trim": "Sx",
+      "age_years": 10
+    },
+    "specs": {
+      "mileage_km": 92719,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP551A",
+    "vin": "3N1AB7AP5JY211224",
+    "vehicle": {
+      "year": 2018,
+      "make": "Nissan",
+      "model": "Sentra",
+      "trim": "1.8 Sv",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 101256,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP565A",
+    "vin": "1C6SRFGT3KN585784",
+    "vehicle": {
+      "year": 2019,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Tradesman",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 88200,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP567A",
+    "vin": "1C6RR7LG1MS592993",
+    "vehicle": {
+      "year": 2021,
+      "make": "RAM",
+      "model": "1500 Classic",
+      "trim": NaN,
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 100267,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP654A",
+    "vin": "1C4PJMAB1LD641710",
+    "vehicle": {
+      "year": 2020,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Sport",
+      "age_years": 6
+    },
+    "specs": {
+      "mileage_km": 97875,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP657B",
+    "vin": "5XYZUDLA3JG553003",
+    "vehicle": {
+      "year": 2018,
+      "make": "Hyundai",
+      "model": "Santa Fe Sport",
+      "trim": "Ultimate Awd",
+      "age_years": 8
+    },
+    "specs": {
+      "mileage_km": 127853,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP730A",
+    "vin": "1FMCU9J93HUD80079",
+    "vehicle": {
+      "year": 2017,
+      "make": "Ford",
+      "model": "Escape",
+      "trim": "Titanium",
+      "age_years": 9
+    },
+    "specs": {
+      "mileage_km": 114331,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP86A",
+    "vin": "1C4PJMCS9HW633945",
+    "vehicle": {
+      "year": 2017,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "North",
+      "age_years": 9
+    },
+    "specs": {
+      "mileage_km": 73596,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP448C",
+    "vin": "1J4FA29P9YP729971",
+    "vehicle": {
+      "year": 2000,
+      "make": "Jeep",
+      "model": "TJ",
+      "trim": "Low Mileage",
+      "age_years": 26
+    },
+    "specs": {
+      "mileage_km": 73124,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Man",
+      "exterior_color": "Green",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26UP88",
+    "vin": "3C7WRNEL8RG396061",
+    "vehicle": {
+      "year": 2024,
+      "make": "RAM",
+      "model": "5500",
+      "trim": "Slt",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 50,
+      "mileage_category": "Low (<20k)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24M16A",
+    "vin": "2C4RDGEGXKR515719",
+    "vehicle": {
+      "year": 2019,
+      "make": "Dodge",
+      "model": "Grand Caravan",
+      "trim": "Gt",
+      "age_years": 7
+    },
+    "specs": {
+      "mileage_km": 163256,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24UP585A",
+    "vin": "KNDEP2AA2M7226204",
+    "vehicle": {
+      "year": 2021,
+      "make": "Kia",
+      "model": "Seltos",
+      "trim": "Lx",
+      "age_years": 5
+    },
+    "specs": {
+      "mileage_km": 79840,
+      "mileage_category": "High (60k-100k)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25UP696A",
+    "vin": "1N4BZ0CP9HC305925",
+    "vehicle": {
+      "year": 2017,
+      "make": "Nissan",
+      "model": "LEAF",
+      "trim": "Sv",
+      "age_years": 9
+    },
+    "specs": {
+      "mileage_km": 108000,
+      "mileage_category": "Very High (>100k)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  }
+]
+]
+```
+
+### NOTES FOR IMPLEMENTATION
+1. **Token Efficiency**: This optimized structure removes 12 redundant/empty columns from original dataset
+2. **Parsing**: Use standard JSON parser to access vehicle array
+3. **Updates**: When new inventory arrives, append to JSON array maintaining same schema
+4. **Images**: Only ~8% of units have images; most display as placeholders
+5. **New Cars**: Apply same optimization schema when processing new car inventory
+
+### QUICK REFERENCE STATS
+- Average Mileage: ~52,000 km
+- Average Age: ~4 years
+- Most Common: SUVs and Trucks (Jeep/RAM/Dodge dominant)
+- Transmission: Predominantly Automatic
+- Price: Contact dealership for all units
