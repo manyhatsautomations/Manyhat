@@ -1,0 +1,68 @@
+Rule:
+You do not "rate" niches.
+You collect real data, then assign the score based on where the number falls.
+
+Each category is scored 1–5.
+
+1. Average Customer Value
+
+What to find:
+What is one customer worth to the business?
+
+How to find it:
+Search pricing pages, Google ("average cost of x"), company websites, job postings, Reddit/Quora threads.
+
+How it's scored:
+Under $500 -> 1
+$500–$1,000 -> 2
+$1,000–$2,000 -> 3
+$2,000–$5,000 -> 4
+$5,000+ -> 5
+
+
+2. Cost of a Missed Lead
+
+What to find:
+How much money is lost if one lead is missed?
+
+How to find it:
+Take average customer value and multiply by a conservative close rate (20–30%).
+
+How it's scored:
+Under $100 -> 1
+$100–$300 -> 2
+$300–$700 -> 3
+$700–$2,000 -> 4
+$2,000+ -> 5
+
+
+3. AI Agency Saturation
+
+What to find:
+How many AI agencies already target this niche.
+
+How to find it:
+Google "AI automation for [niche]", search LinkedIn and Twitter. Count real agencies, not tools.
+
+How it's scored:
+50+ agencies -> 1
+30–50 -> 2
+15–30 -> 3
+5–15 -> 4
+Under 5 -> 5
+
+
+4. Decision Maker Visibility
+
+What to find:
+How easy it is to identify the owner or decision maker.
+
+How to find it:
+Search LinkedIn, company "About" pages, Google "[niche] owner".
+
+How it's scored:
+<20% of businesses identifiable -> 1
+20–40% -> 2
+40–60% -> 3
+60–80% -> 4
+80%+ -> 5
