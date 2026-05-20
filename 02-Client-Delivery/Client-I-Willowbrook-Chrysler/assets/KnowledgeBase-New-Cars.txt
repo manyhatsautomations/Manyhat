@@ -1,0 +1,3882 @@
+# WILLOWBROOK CHRYSLER - NEW VEHICLE INVENTORY KNOWLEDGE BASE
+## Optimized Format for AI Consumption | Generated: 2026-03-06
+## FILTERED: Removed 41 used vehicles mistakenly included in original data
+
+### INVENTORY SNAPSHOT
+- **Total Units**: 154 new vehicles (after filtering out 41 used vehicles)
+- **Pricing Model**: Call for pricing (all units)
+- **Location**: Langley, Surrey BC
+- **Data Quality**: 100% complete, 0 duplicates
+
+### INVENTORY COMPOSITION
+New Vehicle Distribution:
+1. **Jeep**: 83 units (Avg 28km, 2024-2026)
+   - Dominant models: Compass, Wrangler, Cherokee, Gladiator
+2. **RAM**: 54 units (Avg 38km, 2025-2026)
+   - Heavy truck focus: 1500, 2500, 3500, 5500, ProMaster
+3. **Dodge**: 12 units (Avg 46km, 2024-2026)
+   - Performance focus: Charger, Durango, Charger Daytona (EV)
+4. **Chrysler**: 4 units (Avg 64km, 2024)
+   - Minivan/Van: Pacifica Hybrid
+5. **Hyundai**: 1 unit (2025 Venue)
+
+### MODEL YEAR BREAKDOWN
+- **2026 Model Year**: 120 units (78%) - Latest inventory
+- **2025 Model Year**: 25 units (16%) - Previous year
+- **2024 Model Year**: 9 units (6%) - Clearance/demo units
+
+### VEHICLE CLASSIFICATION SYSTEM
+**By Mileage (New Car Categories):**
+- Delivery miles (<50km): Majority of inventory
+- Demo (50-100km): Light test drive/demo use
+- High demo (100km+): Extended demo or transfer units
+
+**By Type:**
+- **Trucks**: RAM 1500/2500/3500/5500 (Heavy duty focus)
+- **SUVs**: Jeep Compass, Cherokee, Grand Cherokee, Wrangler
+- **Performance**: Dodge Charger/Charger Daytona EV, Durango
+- **Commercial**: RAM ProMaster vans
+- **Hybrids/EVs**: Chrysler Pacifica Hybrid, Dodge Charger Daytona, Jeep Wagoneer S
+
+### DATA STRUCTURE
+Each vehicle record follows this schema:
+```
+{
+  "id": "STOCK_NUMBER",
+  "vin": "VIN_CODE", 
+  "vehicle": {
+    "year": YYYY,
+    "make": "MANUFACTURER",
+    "model": "MODEL_NAME",
+    "trim": "TRIM_LEVEL",
+    "age_years": N
+  },
+  "specs": {
+    "mileage_km": NNN,
+    "mileage_category": "Delivery miles|Demo|High demo",
+    "transmission": "Auto|Manual",
+    "exterior_color": "COLOR|Not specified",
+    "interior_color": "COLOR|Not specified"
+  },
+  "availability": {
+    "status": "Available",
+    "tags": ["New arrivals"|empty],
+    "image_available": true|false
+  },
+  "pricing": "Call for pricing"
+}
+```
+
+### SEARCH GUIDELINES FOR AI
+- **2026 Models**: Filter `vehicle.year = 2026` for latest inventory
+- **Low Mileage**: `specs.mileage_category = "Delivery miles"` for factory-fresh
+- **Heavy Duty Trucks**: RAM 2500/3500/5500 classifications
+- **Electric/Hybrid**: Look for "Charger Daytona", "Pacifica Hybrid", "Wagoneer S"
+- **Manual Transmission**: Some Wrangler models (rare)
+- **New Arrivals**: Check `availability.tags` for "New arrivals"
+- **Stock Numbers**: All new cars have "-NEW" suffix in stock number
+
+### HIGHLIGHTED MODELS
+**Electric Vehicles (4 units):**
+- 2024 Dodge Charger Daytona (Multiple variants, 388km range)
+- 2024 Jeep Wagoneer S (482km range, 100.5kW battery)
+- 2024 Chrysler Pacifica Hybrid (Multiple units)
+
+**Heavy Duty Commercial (25+ units):**
+- RAM 3500/5500 trucks
+- ProMaster Cargo Vans (1500/3500 series)
+
+**Off-Road Specialties:**
+- Jeep Wrangler Rubicon, Willys, Sport S
+- Jeep Gladiator
+- RAM Power Wagon
+
+### COMPLETE INVENTORY LIST (JSON FORMAT)
+```json
+[
+[
+  {
+    "id": "25UP380",
+    "vin": "KMHRC8A3XSU399318",
+    "vehicle": {
+      "year": 2025,
+      "make": "Hyundai",
+      "model": "Venue",
+      "trim": "Preferred Ivt",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 51,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J67-NEW",
+    "vin": "3C4NJDAN7TT167547",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 17,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J14-NEW",
+    "vin": "3C4NJDAN5TT156448",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J18-NEW",
+    "vin": "3C4NJDAN5TT156451",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 24,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J2-NEW",
+    "vin": "3C4NJDAN2TT156455",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 73,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J13-NEW",
+    "vin": "3C4NJDAN1TT161341",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 20,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "C",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J66-NEW",
+    "vin": "3C4NJDBN9TT156273",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 20,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J17-NEW",
+    "vin": "3C4NJDAN3TT156447",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J21-NEW",
+    "vin": "3C4NJDAN7TT176815",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Joose",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J73-NEW",
+    "vin": "3C4NJDBN6TT212704",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J78-NEW",
+    "vin": "3C4NJDBN4TT212703",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 21,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J70-NEW",
+    "vin": "3C4NJDBN3TT180133",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 22,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Joose",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J65-NEW",
+    "vin": "3C4NJDBN7TT203476",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J81-NEW",
+    "vin": "3C4NJDBN0TT212701",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J202-NEW",
+    "vin": "1C4PJXAG3SW648822",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 37,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J74-NEW",
+    "vin": "3C4NJDDN9TT205890",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 33,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J72-NEW",
+    "vin": "3C4NJDBN8TT203471",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 28,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J77-NEW",
+    "vin": "3C4NJDBN9TT180802",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 22,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J104-NEW",
+    "vin": "3C4PJMB27TT216131",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 10,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J28-NEW",
+    "vin": "1C4PJXAN5TW192757",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 19,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J32-NEW",
+    "vin": "1C4PJXAN5TW160813",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 33,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J93-NEW",
+    "vin": "3C4NJDDN7TT212711",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 29,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J96-NEW",
+    "vin": "3C4NJDDN9TT212712",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 33,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J94-NEW",
+    "vin": "3C4NJDDN0TT212713",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "C",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J187-NEW",
+    "vin": "3C4NJDCN4ST627260",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Limited",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J171-NEW",
+    "vin": "1C4PJXAN4SW628996",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J88-NEW",
+    "vin": "3C4NJDDN2TT192299",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 22,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J90-NEW",
+    "vin": "3C4NJDDN2TT205889",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J97-NEW",
+    "vin": "3C4NJDDN0TT205891",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J59-NEW",
+    "vin": "3C4NJDDN6TT203479",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J80-NEW",
+    "vin": "3C4PJMB21TT206484",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 35,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J75-NEW",
+    "vin": "3C4NJDBNXTT203472",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J76-NEW",
+    "vin": "3C4NJDBN5TT212709",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J99-NEW",
+    "vin": "3C4PJMB29TT216129",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J101-NEW",
+    "vin": "3C4PJMB25TT206486",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 35,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J103-NEW",
+    "vin": "3C4PJMB25TT216130",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J26-NEW",
+    "vin": "1C4PJXAN2TW160803",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J55-NEW",
+    "vin": "3C4NJDBN1TT203473",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "North",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 37,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Joose",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J44-NEW",
+    "vin": "1C4PJXAN3TW186200",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Dark blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J50-NEW",
+    "vin": "1C4PJXAN7TW192758",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J29-NEW",
+    "vin": "1C4PJXAN8TW165942",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport S",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 28,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J47-NEW",
+    "vin": "1C6PJTAG5TL154867",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 50,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J37-NEW",
+    "vin": "1C6PJTAG0TL154873",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Dark blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J60-NEW",
+    "vin": "3C4NJDDN3TT203486",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 29,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J63-NEW",
+    "vin": "3C4NJDDN9TT175709",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Compass",
+      "trim": "Trailhawk",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Joose",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J272-NEW",
+    "vin": "1C4RJHAG9S8786142",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Laredo",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 24,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J34-NEW",
+    "vin": "1C4PJXAN6TW165941",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "'41",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J271-NEW",
+    "vin": "1C4RJHAGXS8786151",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Laredo",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 21,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J192-NEW",
+    "vin": "1C4RJYA68S8689327",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee 4xe",
+      "trim": NaN,
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 31,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J86-NEW",
+    "vin": "1C4PJXDN8TW226184",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 23,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R144-NEW",
+    "vin": "1C6RRFCG4TN284319",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Tradesman",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 18,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26D13-NEW",
+    "vin": "1C4RDJDG2TC206495",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": "Gt",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 10,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J92-NEW",
+    "vin": "1C4PJXDNXTW226185",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 22,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Reign",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J172-NEW",
+    "vin": "1C4RJKAG2S8730105",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee L",
+      "trim": NaN,
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J100-NEW",
+    "vin": "3C4PJMB24TT161895",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Limited",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J43-NEW",
+    "vin": "1C6PJTAG3TL154799",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J41-NEW",
+    "vin": "1C6PJTAG3TL154883",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 30,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J40-NEW",
+    "vin": "1C6PJTAG7TL154885",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J95-NEW",
+    "vin": "3C4PJMC24TT191347",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Overland",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P20-NEW",
+    "vin": "3C6LRVNG5SE564444",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "1500 Low Roof 118",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 38,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J30-NEW",
+    "vin": "1C4PJXAN4TW163735",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 74,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Man",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J42-NEW",
+    "vin": "1C6PJTAG5TL150415",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P6-NEW",
+    "vin": "3C6LRVBG7SE510924",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "1500 High Roof 136",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 70,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J85-NEW",
+    "vin": "1C4PJXDN5TW226188",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 18,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J102-NEW",
+    "vin": "3C4PJMB22TT206218",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Cherokee",
+      "trim": "Limited",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 36,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J38-NEW",
+    "vin": "1C6PJTAG5TL152794",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P23-NEW",
+    "vin": "3C6MRVXG6SE564308",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "3500 High Roof 136",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 40,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P24-NEW",
+    "vin": "3C6MRVXG8SE564309",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "3500 High Roof 136",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J23-NEW",
+    "vin": "1C4PJXAN2TW163734",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "'41",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J24-NEW",
+    "vin": "1C4PJXAN6TW163736",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 26,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Mojito! Clear Coat",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P21-NEW",
+    "vin": "3C6MRVXG4SE564310",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "3500 High Roof 136",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 44,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J82-NEW",
+    "vin": "1C4PJXDN1TW226186",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport S",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 26,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "'41",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J83-NEW",
+    "vin": "1C4PJXDN3TW226187",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport S",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J19-NEW",
+    "vin": "1C4PJXDG2TW183401",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport S",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26D10-NEW",
+    "vin": "1C4SDJCT3TC189187",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 26,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J116-NEW",
+    "vin": "1C4RJHBG0SC316769",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Limited",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 29,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R145-NEW",
+    "vin": "1C6SRFLP6TN252795",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R123-NEW",
+    "vin": "1C6SRFLP1TN283002",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 23,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24M19-NEW",
+    "vin": "2C4RC1S75RR147805",
+    "vehicle": {
+      "year": 2024,
+      "make": "Chrysler",
+      "model": "Pacifica Hybrid",
+      "trim": "Select",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J125-NEW",
+    "vin": "1C4RJXDG7SW570825",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 22,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Mojito! Clear Coat",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P4-NEW",
+    "vin": "3C6MRVXG8SE500092",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "3500 High Roof 136",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 70,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P26-NEW",
+    "vin": "3C6LRVNG3SE564443",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "1500 Low Roof 118",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 38,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R142-NEW",
+    "vin": "3C6SRFGP0T4161882",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 37,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J282-NEW",
+    "vin": "1C4RJHDG8S8785477",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Overland",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 20,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26C2-NEW",
+    "vin": "2C3CDAMP5TR224748",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Bludicrous",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26C4-NEW",
+    "vin": "2C3CDAMP6TR216223",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J22-NEW",
+    "vin": "1C4PJXEG5TW175369",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sahara",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 28,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Green",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26D12-NEW",
+    "vin": "1C4SDJCT5TC189188",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J25-NEW",
+    "vin": "1C4RJXDG7TW183404",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Willys",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24M14-NEW",
+    "vin": "2C4RC1S73RR147608",
+    "vehicle": {
+      "year": 2024,
+      "make": "Chrysler",
+      "model": "Pacifica Hybrid",
+      "trim": "Select",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 110,
+      "mileage_category": "High demo (100km+)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J98-NEW",
+    "vin": "1C4PJXDG2TW246867",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "'41",
+      "interior_color": "Tan"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25P14-NEW",
+    "vin": "3C6MRVXG8SE503008",
+    "vehicle": {
+      "year": 2025,
+      "make": "RAM",
+      "model": "ProMaster Cargo Van",
+      "trim": "3500 High Roof 136",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 48,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J518-NEW",
+    "vin": "3C4RJNAK5RT180285",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Wagoneer S",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 56,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Black "
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R126-NEW",
+    "vin": "1C6SRFLP8TN283000",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R136-NEW",
+    "vin": "3C7WRNFL4TG232375",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "5500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 26,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R117-NEW",
+    "vin": "1C6SRFMP8TN280368",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Big Horn",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 31,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J49-NEW",
+    "vin": "1C4RJXFG5TW183429",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Rubicon",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 29,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Reign",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R121-NEW",
+    "vin": "1C6SRFLP4TN274827",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 21,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R120-NEW",
+    "vin": "1C6SRFLP0TN274825",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 11,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R118-NEW",
+    "vin": "1C6SRFMP0TN290232",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Big Horn",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 13,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24M4-NEW",
+    "vin": "2C4RC1N75RR115450",
+    "vehicle": {
+      "year": 2024,
+      "make": "Chrysler",
+      "model": "Pacifica Hybrid",
+      "trim": "Pinnacle",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 63,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24M7-NEW",
+    "vin": "2C4RC1N77RR115451",
+    "vehicle": {
+      "year": 2024,
+      "make": "Chrysler",
+      "model": "Pacifica Hybrid",
+      "trim": "Pinnacle",
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 56,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J283-NEW",
+    "vin": "1C4RJHDGXS8785478",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": "Overland",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J46-NEW",
+    "vin": "1C6RJTEG5TL152796",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 28,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26C6-NEW",
+    "vin": "2C3CDAMP0TR171263",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 47,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Triple Nickel",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J89-NEW",
+    "vin": "1C4RJHAR6TC207317",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R63-NEW",
+    "vin": "1C6SRFHP3TN219133",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 65,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24J388-NEW",
+    "vin": "1C6HJTAG2RL130796",
+    "vehicle": {
+      "year": 2024,
+      "make": "Jeep",
+      "model": "Gladiator",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Pink",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J238-NEW",
+    "vin": "1C4RJKDG1S8778710",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee L",
+      "trim": "Overland",
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 18,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J36-NEW",
+    "vin": "1C4RJXFG4TW175371",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Rubicon",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J255-NEW",
+    "vin": "1C4RJHEG9S8776284",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "trim": NaN,
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26C5-NEW",
+    "vin": "2C3CDAMP5TR216228",
+    "vehicle": {
+      "year": 2026,
+      "make": "Dodge",
+      "model": "Charger",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 43,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R11-NEW",
+    "vin": "3C63R3CL5TG191903",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 21,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R12-NEW",
+    "vin": "3C63R3CL3TG191902",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 18,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25J263-NEW",
+    "vin": "1C4RJKEGXS8776288",
+    "vehicle": {
+      "year": 2025,
+      "make": "Jeep",
+      "model": "Grand Cherokee L",
+      "trim": NaN,
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 27,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R78-NEW",
+    "vin": "1C6SRFLP2TN274826",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Rebel",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 26,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24C10-NEW",
+    "vin": "2C3CDBCK9RR205124",
+    "vehicle": {
+      "year": 2024,
+      "make": "Dodge",
+      "model": "Charger Daytona",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 36,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Triple Nickel",
+      "interior_color": "Black "
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24C11-NEW",
+    "vin": "2C3CDBCK8RR205728",
+    "vehicle": {
+      "year": 2024,
+      "make": "Dodge",
+      "model": "Charger Daytona",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 82,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Redeye",
+      "interior_color": "Black "
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "24C21-NEW",
+    "vin": "2C3CDBCKXRR205133",
+    "vehicle": {
+      "year": 2024,
+      "make": "Dodge",
+      "model": "Charger Daytona",
+      "trim": NaN,
+      "age_years": 2
+    },
+    "specs": {
+      "mileage_km": 120,
+      "mileage_category": "High demo (100km+)",
+      "transmission": "Auto",
+      "exterior_color": "Triple Nickel",
+      "interior_color": "Black "
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26J31-NEW",
+    "vin": "1C4RJXFG2TW183453",
+    "vehicle": {
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 31,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Man",
+      "exterior_color": "Reign",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R141-NEW",
+    "vin": "3C6SRFVPXT4165442",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R24-NEW",
+    "vin": "1C6SRFTP9TN227440",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Sport",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 51,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R90-NEW",
+    "vin": "1C6SRFRPXTN269882",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 29,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R129-NEW",
+    "vin": "3C63RRGL5TG212391",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 24,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R54-NEW",
+    "vin": "3C63RRGL7TG212392",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 22,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R32-NEW",
+    "vin": "3C63R3DLXTG158958",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 23,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R82-NEW",
+    "vin": "3C63RRHL9TG215468",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 30,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R143-NEW",
+    "vin": "3C63R3RL9TG257313",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 55,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R38-NEW",
+    "vin": "3C63R3EL2TG174070",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 24,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R138-NEW",
+    "vin": "3C6TR5EJ3TG260448",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "2500",
+      "trim": "Power Wagon",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 45,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R94-NEW",
+    "vin": "1C6SRFHP3TN280370",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": "Limited",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 48,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R135-NEW",
+    "vin": "1C6SRFKPXTN297322",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "1500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 33,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R114-NEW",
+    "vin": "3C63R3DL6TG244154",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 35,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R9-NEW",
+    "vin": "3C63R5EL5TG174978",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "2500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 36,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R18-NEW",
+    "vin": "3C63R3SL6TG177865",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 39,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R60-NEW",
+    "vin": "3C63R3PLXTG195309",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 43,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R44-NEW",
+    "vin": "3C63R3SL4TG223936",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 38,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Silver",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R100-NEW",
+    "vin": "3C63RRPLXTG211513",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 31,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R140-NEW",
+    "vin": "3C63R5EL3TG260449",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "2500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [
+        "New",
+        "arrivals"
+      ],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R49-NEW",
+    "vin": "3C63RRRL5TG212386",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 10,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R35-NEW",
+    "vin": "3C63R3JLXTG194895",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 42,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R43-NEW",
+    "vin": "3C63R3EL5TG202623",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 41,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": true
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R96-NEW",
+    "vin": "3C63RRML2TG215530",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 35,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R65-NEW",
+    "vin": "3C63RRML6TG215529",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 50,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R59-NEW",
+    "vin": "3C63RRJL8TG215469",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 25,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Grey",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R1-NEW",
+    "vin": "3C63R3SL8TG177866",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 43,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R31-NEW",
+    "vin": "3C63R3RL2TG212388",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 32,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R29-NEW",
+    "vin": "3C63R3RL0TG212387",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 38,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Blue",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R105-NEW",
+    "vin": "3C63RRPL3TG215628",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 59,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Black",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R42-NEW",
+    "vin": "3C63R3SL7TG206967",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 124,
+      "mileage_category": "High demo (100km+)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R36-NEW",
+    "vin": "3C63R3SL7TG161707",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": NaN,
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 114,
+      "mileage_category": "High demo (100km+)",
+      "transmission": "Auto",
+      "exterior_color": "White",
+      "interior_color": "Brown"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25D30-NEW",
+    "vin": "1C4SDJH95SC501408",
+    "vehicle": {
+      "year": 2025,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": NaN,
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 68,
+      "mileage_category": "Demo (50-100km)",
+      "transmission": "Auto",
+      "exterior_color": "Triple Nickel",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "25D33-NEW",
+    "vin": "1C4SDJH96SC543375",
+    "vehicle": {
+      "year": 2025,
+      "make": "Dodge",
+      "model": "Durango",
+      "trim": NaN,
+      "age_years": 1
+    },
+    "specs": {
+      "mileage_km": 36,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Red",
+      "interior_color": "Black"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  },
+  {
+    "id": "26R130-NEW",
+    "vin": "3C63R3EL6TG183886",
+    "vehicle": {
+      "year": 2026,
+      "make": "RAM",
+      "model": "3500",
+      "trim": "Laramie",
+      "age_years": 0
+    },
+    "specs": {
+      "mileage_km": 20,
+      "mileage_category": "Delivery miles (<50km)",
+      "transmission": "Auto",
+      "exterior_color": "Not specified",
+      "interior_color": "Not specified"
+    },
+    "availability": {
+      "status": "Available",
+      "tags": [],
+      "image_available": false
+    },
+    "pricing": "Call for pricing"
+  }
+]
+]
+```
+
+### DATA QUALITY NOTES
+- **Removed**: 41 used vehicles with mileage >150km (original data had errors)
+- **Remaining**: 154 verified new vehicles with <150km
+- **Images**: ~25% have photos (improving)
+- **Transmission**: 95% Auto, 5% Manual (Wrangler models)
+- **Colors**: Full spectrum available, some TBD
+
+### USAGE INSTRUCTIONS
+1. Load as JSON array for programmatic access
+2. Use `vehicle.make` for brand filtering
+3. Use `specs.mileage_category` to identify delivery miles vs demos
+4. Check `availability.tags` for "New arrivals" flag
+5. All pricing requires dealer contact
