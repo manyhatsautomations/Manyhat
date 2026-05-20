@@ -1,0 +1,105 @@
+AI System Onboarding Document: Turf Bros
+
+Prepared for: AI Demo Development
+Date: October 26, 2023
+Prepared by: AI Research and Development Specialist
+
+This document provides a detailed overview of Turf Bros' offerings, value
+propositions, and customer sentiment, designed to inform the development of a
+high-performance AI assistant.
+
+
+SECTION 1: TYPES OF TURF & APPLICATIONS
+
+Turf Bros specializes in artificial synthetic turf for various residential and
+commercial applications. The "type" of turf is defined by its application.
+
++----------------------+-------------------------------------------------------+
+| Turf Application     | Description & Key Features                            |
++----------------------+-------------------------------------------------------+
+| Pet Turf             | Designed to withstand heavy traffic and pet waste.    |
+| (Dog-Friendly)       | Features: Superior drainage, easy cleanup, durable,  |
+|                      | odor control.                                         |
+|                      | Ideal For: Homeowners with dogs, dog daycares.        |
++----------------------+-------------------------------------------------------+
+| Landscape Turf       | Replicates the look and feel of a natural lawn.       |
+| (Lawn Replacement)   | Features: Realistic aesthetics, low maintenance,      |
+|                      | allergen-free, year-round green.                      |
+|                      | Ideal For: Front/back yards, commercial landscapes.   |
++----------------------+-------------------------------------------------------+
+| Playground Turf      | Soft, cushioned surface designed for safety.          |
+| (Safety Turf)        | Features: Impact attenuation, clean & mud-free,       |
+|                      | non-abrasive, durable.                                |
+|                      | Ideal For: Backyards, schools, daycare centers.       |
++----------------------+-------------------------------------------------------+
+| Putting Greens       | Short-nap turf engineered for true ball roll.         |
+| (Artificial Grass    | Features: True roll, customizable design, all-weather |
+| for Golf)            | practice, low maintenance.                            |
+|                      | Ideal For: Golf enthusiasts, sports performance       |
+|                      | centers.                                              |
++----------------------+-------------------------------------------------------+
+
+
+SECTION 2: PRICING MODELS
+
+Turf Bros does not publish specific pricing online. All projects are custom-
+quoted based on site evaluation. The AI should guide users toward a free
+consultation.
+
+General Pricing Philosophy:
+- Custom Quotes: Every project is unique.
+- Free Consultation & Estimate: Primary call-to-action.
+
+Factors Influencing Price:
+- Square Footage
+- Turf Type (Pet, Play, Premium Landscape, etc.)
+- Site Preparation (removal, grading, base layer)
+- Additional Features (shock pads, custom contours)
+
+Indicative Pricing Ranges (CAD per sq. ft. installed):
+
+| Package / Scenario          | Price Range (Installed) | Typical Inclusions                          |
+|-----------------------------|-------------------------|---------------------------------------------|
+| Basic Landscape Lawn        | $8 - $12 per sq. ft.    | Sod removal, base layer, standard turf.    |
+| Premium Landscape Lawn      | $12 - $16 per sq. ft.   | Enhanced prep, premium realistic turf.     |
+| Pet Turf Installation        | $10 - $15 per sq. ft.   | Pet-specific turf, drainage layer.         |
+| Playground Turf System      | $14 - $20+ per sq. ft.  | Safety turf, shock pad, safety standards.  |
+| Custom Putting Green        | $15 - $25+ per sq. ft.  | Putting turf, custom design, cups/flag.    |
+
+(Note: These are estimates for AI context only. Always defer to a custom quote.)
+
+
+SECTION 3: CUSTOMER TESTIMONIALS & UNIQUE SELLING POINTS (USPs)
+
+Unique Selling Points (USPs)
+
+1. Customization & Design Expertise: Tailored designs for unique spaces.
+2. Quality Craftsmanship: Professional installation with clean seams.
+3. Focus on Functionality: Specialized solutions for pets, play, golf.
+4. Comprehensive Solution: Full service from design to clean-up.
+5. Local Expertise: Understands local climate and drainage needs.
+
+Customer Testimonials (Synthesized)
+
++---------------------+---------------------------------------------------+
+| Theme               | Customer Sentiment / How AI Can Use It           |
++---------------------+---------------------------------------------------+
+| Life-Changing for   | "No more mud paws! Cleanup is a breeze."         |
+| Pet Owners          | Use to reassure pet owners about durability.     |
++---------------------+---------------------------------------------------+
+| Stunning Curb Appeal| "Our lawn is a showpiece 365 days a year."       |
+|                     | Use to appeal to homeowners focused on looks.    |
++---------------------+---------------------------------------------------+
+| Peace of Mind for   | "A safe, clean space for our kids to play."      |
+| Families            | Use to address safety and cleanliness concerns.  |
++---------------------+---------------------------------------------------+
+| Exceptional Service | "Professional, knowledgeable, and a pleasure."   |
+| & Professionalism   | Use to build trust in the company.               |
++---------------------+---------------------------------------------------+
+| Perfect Practice    | "The ball roll is true and it’s held up."        |
+| Solution            | Use to demonstrate value of custom putting       |
+|                     | greens.                                           |
++---------------------+---------------------------------------------------+
+
+
+END OF DOCUMENT
